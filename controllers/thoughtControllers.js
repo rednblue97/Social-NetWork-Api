@@ -15,7 +15,7 @@ module.exports ={
                 ? res.status(404).json({ message: 'No thought with that ID!'})
                 : res.status(thoughtData)
         )
-        response.json(data)
+        // response.json(thoughtData)
         .catch((err) => res.status(500).json(err));
     },
     createThought(req, res) {
@@ -63,7 +63,7 @@ module.exports ={
         .then((thoughtData) => 
         !thoughtData
         ? res.status(404).json({ message: 'No thought with this ID!'})
-        : res.join(thoughtData)
+        : res.json(thoughtData)
         )
     },
 };
