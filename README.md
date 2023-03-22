@@ -24,7 +24,8 @@ The user will download the files, npm I to install the packages(Mongoose and Exp
 
 ## Usage
 This application is used to create posts and thought to connect with friends. Below is a link for a video on how to run and test this application.
-https://drive.google.com/file/d/1pWgE28QWD81_r_XJqHUv5MhltTCDMH1w/view
+[MOD18.webm](https://user-images.githubusercontent.com/114364879/227002969-32769151-04cb-4d3d-b7fa-9708dfbdb834.webm)
+
 
 ## License
 None
