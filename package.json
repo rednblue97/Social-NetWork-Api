@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "social-network-api",
+  "description": "\"A social netork\"",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaptureB/Social-NetWork-Api.git"
+  },
+  "keywords": [
+    "\"start\""
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaptureB/Social-NetWork-Api/issues"
+  },
+  "homepage": "https://github.com/CaptureB/Social-NetWork-Api#readme"
+}
