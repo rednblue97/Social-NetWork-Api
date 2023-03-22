@@ -1,4 +1,5 @@
 const router = require('express').Router();
+// Routes for CRUD
 const {
     getAllUsers,
     getSingleUser,
@@ -11,9 +12,7 @@ router.route('/').get(getAllUsers).post(createUser);
 
 router 
 .route('/:userId').get(getSingleUser).put(updateUser).delete(deleteUser);
-// .get(getSingleUser)
-// .put(updateUser)
-// .delete(deleteUser);
+
 
 
 module.exports = router;

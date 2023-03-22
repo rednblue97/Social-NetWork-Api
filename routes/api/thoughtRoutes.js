@@ -1,4 +1,5 @@
 const router = require('express').Router();
+// routes for methods CRUD
 const {
     getAllThoughts,
     getSingleThought,

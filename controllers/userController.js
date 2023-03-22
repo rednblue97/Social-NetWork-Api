@@ -1,6 +1,7 @@
 const { User } = require('../models');
 
 module.exports ={
+    // allows the user to get ALL users
     getAllUsers( req, res) {
         User.find()
         .then((userData) => {res.json(userData)})
@@ -17,6 +18,7 @@ module.exports ={
         )
         .catch((err) => res.status(500).json(err));
     },
+    // allows the user to create a new user
     createUser(req, res) {
         User.create(req.body)
         .then((userData) => res.json(userData))
@@ -37,6 +39,7 @@ module.exports ={
         )
         .catch((err) => res.status(500).json(err)); 
     },
+    // allows the user to delete a user with id
     deleteUser(req, res) {
         User.findOneAndRemove({ _id: req.params.userId })
         .then((userData) => 

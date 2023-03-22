@@ -2,6 +2,7 @@ const { response } = require('express');
 const { Thoughts, User } = require('../models');
 
 module.exports ={
+  // lets the user get ALL the thoughts
     getAllThoughts(req, res) {
         Thoughts.find()
         .then((thoughtData) => res.json(thoughtData))
@@ -18,6 +19,7 @@ module.exports ={
         // response.json(thoughtData)
         .catch((err) => res.status(500).json(err));
     },
+    // Allows the user to create thoughts
     createThought(req, res) {
         Thoughts.create(req.body)
           .then((thoughtData) => {
@@ -58,6 +60,7 @@ module.exports ={
         )
         .catch((err) => res.status(500).json(err));
     },
+    // Allows the user to delete thoughts with the id
     deleteThought(req, res) {
         Thoughts.findOneAndDelete({ _id: req.params.thoughtId })
         .then((thoughtData) => 
