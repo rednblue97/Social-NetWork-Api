@@ -40,6 +40,7 @@ Tests can be ran in insomnia with localhost users/thoughts.
 
 
 ## GitHub 
-https://github.com/CaptureB
+https://github.com/rednblue97
 
 ## Email
+probablydavidgarcia97@gmail.com
